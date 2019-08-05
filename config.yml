@@ -1,0 +1,12 @@
+rancher:
+#!/bin/bash
+str=`hostname`
+echo "${str: -1}"
+#ende des scripts
+  network:
+    interfaces:
+      eth0:
+        gateway: 10.2.224.1
+        mtu: 1500
+        dhcp: false
+        address: 10.2.237.57/19
